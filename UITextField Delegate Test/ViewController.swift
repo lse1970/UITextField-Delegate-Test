@@ -35,6 +35,7 @@ class ViewController: UIViewController {
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         txtF.resignFirstResponder()
         //txtF.endEditing(false)
+        //view.endEditing(false)
     }
 }
 
