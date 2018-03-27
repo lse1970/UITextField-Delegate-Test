@@ -15,7 +15,7 @@ class ViewController: UIViewController, UITextFieldDelegate {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         //UITextFieldDelegate 객체와 veiwController 객체와 연결
-        txtF.delegate = self
+        //txtF.delegate = self
         
         txtF.placeholder = "입력을 하세요"
         txtF.clearButtonMode = UITextFieldViewMode.whileEditing
@@ -50,7 +50,7 @@ class ViewController: UIViewController, UITextFieldDelegate {
         txtF.endEditing(false)
         return true
     }
-    
+    //delegate method
      func textFieldShouldClear(_ textField: UITextField) -> Bool // called when clear button pressed. return NO to ignore (no notifications)
      {
         view .backgroundColor = UIColor.green
