@@ -51,5 +51,10 @@ class ViewController: UIViewController, UITextFieldDelegate {
         return true
     }
     
+     func textFieldShouldClear(_ textField: UITextField) -> Bool // called when clear button pressed. return NO to ignore (no notifications)
+     {
+        view .backgroundColor = UIColor.green
+        return true
+    }
 }
 
