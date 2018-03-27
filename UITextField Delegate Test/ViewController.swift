@@ -46,7 +46,8 @@ class ViewController: UIViewController, UITextFieldDelegate {
     func textFieldShouldReturn(_ textField: UITextField) -> Bool
     {
         view .backgroundColor = UIColor.yellow
-        txtF.resignFirstResponder()
+        //txtF.resignFirstResponder()
+        txtF.endEditing(false)
         return true
     }
     
